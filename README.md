@@ -27,7 +27,7 @@ Project Import Instructions
 
 In Eclipse:
 <ol>
-<li>Import the <b>DFATester</b> project into your Eclipse workspace.</li>
+<li>Import the <b>DFATester</b> project into your Eclipse workspace. <a href="https://github.com/jgilfelt/SystemBarTint"><b>SystemBarTint.jar</b></a> should be automatically imported.</li>
 
 <li>Add <b>android-support-v7-appcompat</b> as a (library) project in Eclipse (if you haven't yet, download the Android Support Library using the Android SDK Manager).</li>
 
