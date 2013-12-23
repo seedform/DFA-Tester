@@ -1,13 +1,13 @@
 DFA Tester
 =
 
-A deterministic finite automaton (DFA) tester that allows users to build DFAs and test them.
+A deterministic finite automaton (DFA) tester that allows users to build and test DFAs.
 
-For each DFA created in the application, users can:
+Users can:
 <ul>
-<li>Define their own alphabet</li>
-<li>Define states and set their transitions</li>
-<li>Test if a string is accepted or rejected by the DFA</li>
+<li>Define their own alphabets</li>
+<li>Define states and set transitions</li>
+<li>Test if a string is accepted or rejected by a DFA</li>
 </ul>
 
 <div align="center">
