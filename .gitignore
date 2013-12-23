@@ -1,0 +1,6 @@
+DFATester/bin/*
+DFATester/lint.xml
+DFATester/proguard/*
+DFATester/.classpath
+DFATester/.project
+DFATester/.settings

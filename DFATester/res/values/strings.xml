@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Copyright 2013 Shudmanul Chowdhury
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <!-- Global -->
+    <string name="app_name">DFA Tester</string>
+    <string name="action_close">Close</string>
+    <string name="action_confirm_delete">Confirm delete</string>
+    <string name="msg_concat_deleted">&#160;has been deleted!</string>
+
+    <!-- DFAListActivity -->
+    <string name="action_add_dfa">New DFA</string>
+    <string name="action_info">Info</string>
+    <string name="title_dfa_list">Deterministic Finite Automatons</string>
+    <string name="empty_dfa_listview_text">Tap (+) to create a new DFA</string>
+    <string name="msg_new_dfa">New DFA created!</string>
+
+    <!-- DFAViewerActivity -->
+    <string-array name="tab_titles">
+        <item>Alphabet</item>
+        <item>States</item>
+        <item>Test</item>
+    </string-array>
+
+    <!-- AlphabetListFragment -->
+    <string name="action_add_symbol">Add symbols</string>
+    <string name="action_replace_symbol">Replace symbol</string>
+    <string name="title_alphabet_list">Alphabet (\u03A3)</string>
+    <string name="empty_alphabet_listview_text">Tap (+) to add a new symbol</string>
+    <string name="title_symbol_entry">Enter new symbols:</string>
+    <string name="hint_symbol_entry">Type any set of characters</string>
+    <string name="title_symbol_replacement">Enter a replacement symbol:</string>
+    <string name="hint_concat_symbol_replacement">Replacement for&#160;</string>
+    <string name="msg_concat_symbol_exists">&#160;already exists!</string>
+    <string name="msg_concat_symbol_replaced">&#160;has been replaced</string>
+    <string name="msg_symbols_added">Symbol(s) added!</string>
+
+    <!-- StateListFragment -->
+    <string name="action_add_state">Add new state</string>
+    <string name="title_state_list">Finite Set of States (Q)</string>
+    <string name="empty_state_listview_text">Tap (+) to add states</string>
+    <string name="msg_alpha_config_incomplete">Alphabet not configured!</string>
+    <string name="msg_new_state">New state added!</string>
+
+    <!-- StringTestFragment -->
+    <string name="title_string_test">DFA String Test</string>
+    <string name="hint_test_string">Enter a test string</string>
+    <string name="button_test_string">TEST</string>
+    <string name="msg_state_or_alpha_config_incomplete">States or alphabet configuration incomplete!</string>
+    <string name="msg_running_test">Running test&#8230;</string>
+    <string name="msg_test_complete">Test complete!</string>
+
+    <!-- TransitionSetterActivity -->
+    <string name="title_transition_setter">Transitions From State</string>
+    <string name="text_accepting_state">Set as accepting state</string>
+
+    <!-- InfoActivity -->
+    <string-array name="info_item_titles">
+        <item>Rate</item>
+        <item>Other apps</item>
+        <item>Contact developer</item>
+        <item>About</item>
+        <item>Open source licenses</item>
+    </string-array>
+
+    <string-array name="info_item_summaries">
+        <item>Rate this app on Google Play</item>
+        <item>Check out my other apps on Google Play</item>
+        <item>Questions, comments, bugs? Send me an email!</item>
+        <item>Additional info about this app</item>
+        <item>License details for open source software</item>
+    </string-array>
+
+    <string name="title_about">About</string>
+    <string name="title_licenses">Open Source Licenses</string>
+    <string name="action_select_email_app">Select email application</string>
+    <string name="msg_about">DFA Tester v1.0\n\n&#169; 2013 Seedform Apps</string>
+    <string name="email_body">-Your message here-\n\n---------------------------\n</string>
+
+    <!-- Special -->
+    <string name="email_address">seedformapps@gmail.com</string>
+    <string name="url_market_app_link">https://play.google.com/store/apps/details?id=com.seedform.dfatester</string>
+    <string name="url_market_pub_link">https://play.google.com/store/apps/developer?id=Seedform</string>
+    <string name="url_about">file:///android_asset/about.html</string>
+    <string name="url_licenses">file:///android_asset/licenses.html</string>
+
+</resources>
