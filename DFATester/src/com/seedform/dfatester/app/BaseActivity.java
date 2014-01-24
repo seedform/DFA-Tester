@@ -80,8 +80,6 @@ public abstract class BaseActivity extends ActionBarActivity {
      * @param activity The class object of the target <tt>Activity</tt>.
      * @param enableTranslucentNav Set to <tt>true</tt> to enable translucent
      *            navigation in the target <tt>Activity</tt>.
-     * @param forResult Set to <tt>true</tt> to execute
-     *            <tt>startActivityForResult()</tt>, <tt>false</tt> otherwise.
      * @param requestCode If >= 0, this code will be returned in
      *            onActivityResult() when the activity exits.
      */
