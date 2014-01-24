@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:padding="15dp"
             android:singleLine="false"
+            android:textIsSelectable="true"
             android:textColor="@android:color/white"
             android:typeface="monospace" />
         

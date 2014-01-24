@@ -90,13 +90,13 @@ public class InfoActivity extends BaseActivity implements AdapterView.OnItemClic
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch(position) {
             case 0:
-                showStoreAppPage();
+                openBrowser(R.string.url_market_app_link);
                 break;
             case 1:
-                showStorePubPage();
+                openBrowser(R.string.url_market_pub_link);
                 break;
             case 2:
-                showContactDev();
+                contact();
                 break;
             case 3:
                 showPage(R.string.url_about, R.string.title_about);
@@ -107,24 +107,19 @@ public class InfoActivity extends BaseActivity implements AdapterView.OnItemClic
         }
     }
 
-    private void showStoreAppPage() {
-        Intent appPageIntent = new Intent(Intent.ACTION_VIEW);
-        appPageIntent.setData(Uri.parse(getResources().getString(R.string.url_market_app_link)));
-        startActivity(appPageIntent);
+    private void openBrowser(int urlResId) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+        browserIntent.setData(Uri.parse(getResources().getString(urlResId)));
+        startActivity(browserIntent);
     }
 
-    private void showStorePubPage() {
-        Intent pubPageIntent = new Intent(Intent.ACTION_VIEW);
-        pubPageIntent.setData(Uri.parse(getResources().getString(R.string.url_market_pub_link)));
-        startActivity(pubPageIntent);
-    }
-
-    private void showContactDev() {
+    private void contact() {
         String emailBody = getResources().getString(R.string.email_body)
                 + Tool.getSystemInfoAsFormattedString();
         Intent mailIntent = new Intent(Intent.ACTION_SEND);
-        mailIntent.setType("message/rfc822"); // use from live device
-        mailIntent.putExtra(Intent.EXTRA_EMAIL, getResources().getString(R.string.email_address));
+        mailIntent.setType("message/rfc822");
+        mailIntent.putExtra(Intent.EXTRA_EMAIL,
+                new String[]{getResources().getString(R.string.email_address)});
         mailIntent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.app_name));
         mailIntent.putExtra(Intent.EXTRA_TEXT, emailBody);
         startActivity(Intent.createChooser(mailIntent,
@@ -133,8 +128,6 @@ public class InfoActivity extends BaseActivity implements AdapterView.OnItemClic
     
     private void showPage(int urlResId, int titleResId) {
         WebView webView = new WebView(this);
-//        webView.getSettings().setLoadWithOverviewMode(true);
-//        webView.getSettings().setUseWideViewPort(true);
         webView.loadUrl(getResources().getString(urlResId));
         new AlertDialog.Builder(this)
                 .setTitle(titleResId)

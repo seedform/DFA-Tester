@@ -108,7 +108,7 @@ public class StringTestFragment extends Fragment implements View.OnClickListener
                     : getResources().getColor(R.color.test_string_rejected);
             mMessageTextView.setText(mLog.getMessage());
             mMessageTextView.setTextColor(resultColor);
-            mLogTextView.setText(mLog.getTransitionHistory());
+            mLogTextView.setText(mLog.toString());
             mLogTextView.setTextColor(resultColor);
             mLogScrollView.fullScroll(ScrollView.FOCUS_UP);
             Tool.createToast(getActivity(), R.string.msg_test_complete, Toast.LENGTH_LONG);

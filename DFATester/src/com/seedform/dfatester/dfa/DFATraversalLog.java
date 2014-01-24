@@ -32,6 +32,10 @@ public class DFATraversalLog {
         mAccepted = accepted;
         mMessage = accepted ? "ACCEPTED" : mMessage;
     }
+    
+    protected void recordTransition(char transitionChar, State destState) {
+        mLog += String.format("\t --( %c )--> State %d\n", transitionChar, destState.getId());
+    }
 
     protected void setBadTransition(char c) {
         mMessage = "ERROR";
@@ -44,11 +48,7 @@ public class DFATraversalLog {
     }
 
     protected void finishRecord() {
-        mLog += "END";
-    }
-
-    protected void recordTransition(char transitionChar, State destState) {
-        mLog += String.format("\t --( %c )--> State %d\n", transitionChar, destState.getId());
+        mLog = String.format("Result: %s\n\n%sEND", mMessage, mLog);
     }
 
     public boolean isAccepted() {
@@ -59,7 +59,7 @@ public class DFATraversalLog {
         return mMessage;
     }
 
-    public String getTransitionHistory() {
+    public String toString() {
         return mLog;
     }
 

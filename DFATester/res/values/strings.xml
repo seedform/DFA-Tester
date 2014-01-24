@@ -94,7 +94,7 @@
     <string name="email_body">-Your message here-\n\n---------------------------\n</string>
 
     <!-- Special -->
-    <string name="email_address">seedformapps@gmail.com</string>
+    <string name="email_address">contact@seedform.net</string>
     <string name="url_market_app_link">https://play.google.com/store/apps/details?id=com.seedform.dfatester</string>
     <string name="url_market_pub_link">https://play.google.com/store/apps/developer?id=Seedform</string>
     <string name="url_about">file:///android_asset/about.html</string>
