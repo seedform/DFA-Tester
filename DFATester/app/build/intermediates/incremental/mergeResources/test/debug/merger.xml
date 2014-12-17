@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\src\androidTest\res" />
+        <source path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\build\generated\res\rs\test\debug" />
+        <source path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\build\generated\res\generated\test\debug" />
+    </dataSet>
+
+</merger>

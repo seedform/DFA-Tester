@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.seedform.dfatester"
+        minSdkVersion 8
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile files('libs/SystemBarTint.jar')
+}

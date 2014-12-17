@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/D:/Dropbox/ITW/Repos/DFA-Tester/DFATester/app/src/main/res/values-sw720dp/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+    <!-- From: file:/D:/Dropbox/ITW/Repos/DFA-Tester/DFATester/app/src/main/res/values-sw720dp/integers.xml -->
+    <eat-comment />
+
+    <integer name="columns">4</integer>
+
+</resources>

@@ -1,6 +1,0 @@
-bin/*
-proguard/*
-lint.xml
-.classpath
-.project
-.settings

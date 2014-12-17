@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="19.1.0" >
+        <source path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\src\main\assets" >
+            <file
+                name="about.html"
+                path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\src\main\assets\about.html" />
+            <file
+                name="icon.png"
+                path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\src\main\assets\icon.png" />
+            <file
+                name="licenses.html"
+                path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\src\main\assets\licenses.html" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="D:\Dropbox\ITW\Repos\DFA-Tester\DFATester\app\src\debug\assets" />
+    </dataSet>
+
+</merger>
