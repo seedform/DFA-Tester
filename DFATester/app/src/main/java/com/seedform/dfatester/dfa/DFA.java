@@ -27,6 +27,9 @@ public class DFA implements Serializable {
 	private int mId;
 	private ArrayList<Character> mAlphabet;
 	private ArrayList<State> mStates;
+
+    private ArrayList<Transition> transitions;
+
 	
 	/**
 	 * Constructs a <tt>DFA</tt> with an empty <tt>Alphabet</tt>.
